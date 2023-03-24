@@ -19,6 +19,7 @@ public class Class1
             connection = new MySqlConnection(connectionString);
             connection.Open();
             Console.WriteLine("Connesione aperta");
+            Console.WriteLine("tutto riuscio correttamente");
         }
 
         public static MySqlConnection GetConnection()
