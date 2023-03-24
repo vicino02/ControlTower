@@ -24,6 +24,7 @@ public class Class1
         {
             // Restituire la connessione
             return connection;
+            Console.WriteLine("connesione passata e aperta con successo");
         }
 
         public static void CloseConnection()
