@@ -19,7 +19,7 @@ public class Class1
             connection = new MySqlConnection(connectionString);
             connection.Open();
             Console.WriteLine("Connesione aperta");
-            Console.WriteLine("tutto riuscio correttamente");
+
         }
 
         public static MySqlConnection GetConnection()
@@ -34,6 +34,14 @@ public class Class1
             // Chiudere la connessione al database alla fine del programma
             connection.Close();
             Console.WriteLine("la connesione risulta chiusa");
+            if(connection != null)
+            {
+                connection.Dispose();
+                Console.Writeline("la connesione risulta nulla");
+                connection = null;
+                Console.Writline("")
+            }
+            
         }
 
 
