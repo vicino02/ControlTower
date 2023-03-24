@@ -18,19 +18,23 @@ public class Class1
             // Aprire la connessione al database all'inizio del programma
             connection = new MySqlConnection(connectionString);
             connection.Open();
+            Console.WriteLine("Connesione aperta");
         }
 
         public static MySqlConnection GetConnection()
         {
             // Restituire la connessione
             return connection;
+            Console.WriteLine("PASSAGGIO DI CONNESIONE APERTA");
         }
 
         public static void CloseConnection()
         {
             // Chiudere la connessione al database alla fine del programma
             connection.Close();
+            Console.WriteLine("la connesione risulta chiusa");
         }
+
 
 
     }
