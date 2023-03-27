@@ -20,7 +20,8 @@ public class Class1
             connection.Open();
             Console.WriteLine("Connesione aperta");
             connection.Open();
-
+            DatabaseManager.connection = connection;
+            MessageBox.Show("la connesione con DBmanager risulta in mode open");
 
 
         }
