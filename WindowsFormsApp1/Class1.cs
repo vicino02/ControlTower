@@ -19,6 +19,9 @@ public class Class1
             connection = new MySqlConnection(connectionString);
             connection.Open();
             Console.WriteLine("Connesione aperta");
+            connection.Open();
+
+
 
         }
 
