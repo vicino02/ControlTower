@@ -16,7 +16,7 @@
             Console.Readline(num2)
             calcolo = num1 + num2 / 2;
             MessageBox.Show("TUTTO IN REGOLA");
-
+          
         }
 
 
