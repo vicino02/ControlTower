@@ -31,8 +31,24 @@ public class Class1
         {
             // Chiudere la connessione al database alla fine del programma
             connection.Close();
+<<<<<<< Updated upstream
         }
 
 
+=======
+            Console.WriteLine("la connesione risulta chiusa");
+            if(connection != null)
+            {
+                connection.Dispose();
+                Console.Writeline("la connesione risulta nulla");
+                connection = null;
+                Console.Writline("")
+                MessageBox.Show("la connesione vine chiusa a fine sessione");
+
+            }
+            
+        }
+
+>>>>>>> Stashed changes
     }
 }
