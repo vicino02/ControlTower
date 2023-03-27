@@ -40,7 +40,11 @@ public class Class1
                 Console.Writeline("la connesione risulta nulla");
                 connection = null;
                 Console.Writline("")
+                MessageBox.Show("la connesione vine chiusa a fine sessione");
+
             }
+
+
             
         }
 
